@@ -1,12 +1,5 @@
 fn main() {
-    let x = 27;
-    println!("The value of x is {}", x);
+    let tup = (1, 2, 3);
 
-    {
-        let x = 2;
-        println!("The value of x is {}", x);
-    }
-
-    let x = 5;
-    println!("The value of x is {}", x);
+    println!("{}", tup.2);
 }

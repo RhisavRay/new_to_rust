@@ -1,6 +1,12 @@
 fn main() {
-    let mut x = 27;
+    let x = 27;
     println!("The value of x is {}", x);
-    x = 5;
+
+    {
+        let x = 2;
+        println!("The value of x is {}", x);
+    }
+
+    let x = 5;
     println!("The value of x is {}", x);
 }
